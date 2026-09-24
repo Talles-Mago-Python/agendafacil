@@ -1,0 +1,14 @@
+openapi: 3.0.3
+info:
+  title: AgendaFácil API
+  version: 0.0.0
+  description: |
+    Contrato da API. **Stub inicial** — criado pelo Agente Arquiteto em 2026-09-24.
+
+    Este arquivo é a fonte da verdade da superfície HTTP. Os tipos em `packages/shared`
+    são derivados dele; em caso de conflito, vale este YAML.
+
+    Nenhum path foi definido ainda porque o domínio do produto ainda não foi confirmado
+    (ver `docs/HANDOFF.md`, item H-001, e `docs/ARCHITECTURE.md`).
+servers: []
+paths: {}
