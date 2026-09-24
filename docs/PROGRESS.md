@@ -34,7 +34,7 @@ _(nenhuma tarefa em andamento)_
 6. [backend] #6 (F1-06) `apps/api` · [frontend] #7 (F1-07) `apps/web` — em paralelo, ambos dependem só de #1
 
 ## Concluído
-- 2026-09-24 [arquiteto] Issues da Fase 1 criadas a partir do `docs/BACKLOG.md`: #2 (F1-02), #3 (F1-03), #4 (F1-04), #5 (F1-05), #6 (F1-06) e #7 (F1-07), todas com o template `tarefa`, ID do backlog no corpo e dependências apontando para os números reais (#1 e #4). A F1-01 já existia como #1 e a F1-08 é do humano. Labels **não** puderam ser aplicadas pelo token (403) — ver "Próximos" item 1 (arena/01a0d47e-agendafacil)
+- 2026-09-24 [arquiteto] Issues da Fase 1 criadas a partir do `docs/BACKLOG.md`: #2 (F1-02), #3 (F1-03), #4 (F1-04), #5 (F1-05), #6 (F1-06) e #7 (F1-07), todas com o template `tarefa`, ID do backlog no corpo e dependências apontando para os números reais (#1 e #4). A F1-01 já existia como #1 e a F1-08 é do humano. Labels **não** puderam ser aplicadas pelo token (403) — ver "Próximos" item 1 (arena/01a0d47e-agendafacil, PR #8)
 - 2026-09-24 [arquiteto] Documentação inicial: VISION, ARCHITECTURE, DOMAIN, CONVENTIONS, specs (auth, serviços, horários e bloqueios, agendamento), openapi.yaml v0.1.0, ADRs 001–005, BACKLOG
   - ⚠️ Correção de 2026-09-24: o `docs/api/openapi.yaml` **não** está na v0.1.0 — o arquivo no repositório é o stub `version: 0.0.0`, sem `paths` e sem `schemas`. Publicado como pendência em "Próximos" item 2.
 - 2026-09-24 [dados] Documentos enviados pelo humano organizados em `docs/`. Removidas as sobras do bootstrap anterior: ADR 0001 e templates duplicados. Ainda faltam no repositório o `AGENTS.md` e o `openapi.yaml` v0.1.0. Aberto o H-001 para o devops (arena/01a0d47e-agendafacil)
