@@ -22,6 +22,8 @@ _(nenhuma tarefa em andamento)_
 ## Concluído
 - 2026-09-24 [arquiteto] Documentação inicial: VISION, ARCHITECTURE, DOMAIN, CONVENTIONS, specs (auth, serviços, horários e bloqueios, agendamento), openapi.yaml v0.1.0, ADRs 001–005, BACKLOG
 - 2026-09-24 [dados] Documentos enviados pelo humano organizados em `docs/`. Removidas as sobras do bootstrap anterior: ADR 0001 e templates duplicados. Ainda faltam no repositório o `AGENTS.md` e o `openapi.yaml` v0.1.0. Aberto o H-001 para o devops (arena/01a0d47e-agendafacil)
+- 2026-09-24 [dados] A pedido do humano: removido `docs/specs/_TEMPLATE.md` e Node alvo trocado de 20 para 24 LTS no ARCHITECTURE e no README (arena/01a0d47e-agendafacil)
 
 ## Decisões recentes
 - Veja `docs/adr/` (001 a 005)
+- 2026-09-24 · Node alvo: **24 LTS** (decisão do humano). O Node 20 saiu de suporte em 30/04/2026. O 26 só vira LTS em 28/10/2026 e ainda não está disponível na Vercel para builds e Functions, onde o máximo hoje é o 24.x. Reavaliar quando a Vercel suportar o 26.

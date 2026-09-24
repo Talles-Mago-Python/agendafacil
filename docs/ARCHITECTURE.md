@@ -33,7 +33,7 @@
 | Camada | Tecnologia | Versão alvo |
 |---|---|---|
 | Linguagem | TypeScript (strict) | 5.x |
-| Runtime | Node.js | 20 LTS |
+| Runtime | Node.js | 24 LTS |
 | Gerenciador | pnpm workspaces | 9.x |
 | Frontend | Next.js (App Router) + React | 15.x / 19.x |
 | Estilo | Tailwind CSS | 4.x |

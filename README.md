@@ -22,7 +22,7 @@ Sistema web de agendamento online para pequenos negócios.
 
 ## Rodando localmente
 
-Pré-requisitos: Node 20+, pnpm 9+, Docker.
+Pré-requisitos: Node 24+, pnpm 9+, Docker.
 
 ```bash
 pnpm install
