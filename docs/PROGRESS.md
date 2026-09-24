@@ -1,35 +1,26 @@
-# PROGRESS.md
+# Progresso
 
-Painel de progresso. Atualizado pelo Agente Arquiteto a cada spec/issue concluída.
+> Diário de bordo do projeto. **Todo agente atualiza ao iniciar e ao concluir uma tarefa.**
+> Formato: `AAAA-MM-DD [área] #issue descrição (branch ou PR)`
 
-**Legenda:** ⬜ não iniciado · 🟨 em andamento · ✅ concluído · ⛔ bloqueado
+## Estado atual
+- **Fase:** 1, Fundação
+- **Versão do contrato:** 0.1.0 (`docs/api/openapi.yaml`)
+- **Bloqueios:** nenhum
 
-## Fundações
+## Em andamento
+_(nenhuma tarefa em andamento)_
 
-| Item | Área | Status | Obs. |
-|---|---|---|---|
-| Esqueleto de processo (`AGENTS.md`, `docs/`, templates) | arquiteto | ✅ | 2026-09-24 |
-| `docs/VISION.md` | arquiteto | ⛔ | Bloqueado em H-001 (perguntas de negócio) |
-| ADR 0002–0006 (domínio, tenancy, operador, disponibilidade, stack) | arquiteto | ⛔ | Bloqueado em H-001 |
-| Labels `area:*` no GitHub | arquiteto | ⬜ | H-002 |
-| `docs/api/openapi.yaml` com rotas reais | arquiteto | ⛔ | Stub v0.0.0 criado; conteúdo depende da spec |
-| `packages/shared` | arquiteto | ⛔ | Depende da stack (ADR 0006) |
-| `apps/api` | backend | ⬜ | — |
-| `apps/web` | frontend | ⬜ | — |
-| Migrations/seeds | dados | ⬜ | — |
-| CI | devops | ⬜ | — |
-| Plano de testes | qa | ⬜ | — |
+## Próximos (em ordem)
+1. [humano] F1-08 Proteger a `main`, criar labels, conectar o repositório ao Arena.ai
+2. [arquiteto] Criar as issues da Fase 1 a partir do `docs/BACKLOG.md`
+3. [devops] F1-01 Esqueleto do monorepo
+4. [devops] F1-02 / F1-03 docker-compose e CI
+5. [arquiteto] F1-04 / F1-05 `packages/shared`
+6. [backend] F1-06 · [frontend] F1-07 (em paralelo)
 
-## Features
+## Concluído
+- 2026-09-24 [arquiteto] Documentação inicial: VISION, ARCHITECTURE, DOMAIN, CONVENTIONS, specs (auth, serviços, horários e bloqueios, agendamento), openapi.yaml v0.1.0, ADRs 001–005, BACKLOG
 
-| # | Feature | Spec | ADRs | Issues | Status |
-|---|---|---|---|---|---|
-| — | _nenhuma ainda_ | — | — | — | — |
-
-## Registro
-
-- **2026-09-24** — Repositório recebido vazio (commit base `02fad20`, só `README.md`).
-  Criados: `AGENTS.md`, `docs/ARCHITECTURE.md`, `docs/PROGRESS.md`, `docs/HANDOFF.md`,
-  `docs/specs/_TEMPLATE.md`, `docs/adr/_TEMPLATE.md`, `docs/adr/0001-registro-de-decicoes.md`,
-  `docs/api/openapi.yaml` (stub), `.github/ISSUE_TEMPLATE/feature.md`.
-  Enviadas 5 perguntas de negócio ao humano (H-001).
+## Decisões recentes
+- Veja `docs/adr/` (001 a 005)

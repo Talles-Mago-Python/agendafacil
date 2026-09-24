@@ -1,46 +1,30 @@
-# HANDOFF.md
+# Handoff: pedidos entre agentes
 
-Fila de pedidos **para o Agente Arquiteto**. Qualquer agente (ou humano) registra aqui o que
-precisa; o Arquiteto resolve e marca o item.
+> Use quando precisar de algo **fora da sua área**. Registre o pedido, avise o humano e **pare** (não implemente na área do outro).
+> O arquiteto (ou o agente dono) responde e move o item para "Resolvidos".
 
-Formato de cada pedido:
+## Como registrar
 
+```markdown
+### H-NNN · [de: área] → [para: área] · Título curto
+- **Data:** AAAA-MM-DD
+- **Issue relacionada:** #N
+- **Preciso de:** o que exatamente (campo, endpoint, variável de ambiente, dependência...)
+- **Motivo:** por que é necessário (link para a spec, se houver)
+- **Bloqueia minha tarefa?** sim / não (sigo com um mock ou contorno)
+- **Status:** aberto
 ```
-### H-NNN — <título curto>
-- De: <agente ou pessoa>
-- Data: <AAAA-MM-DD>
-- Pedido: <o que precisa>
-- Bloqueia: <issue/área>
-- Status: ABERTO | EM ANDAMENTO | RESOLVIDO
-- Resolução: <link para spec/ADR/issue + resumo>
-```
+
+## Exemplos de pedidos válidos
+- O frontend precisa de um campo novo na resposta → **para: arquiteto** (muda o contrato)
+- O backend precisa de um índice novo → **para: dados**
+- Qualquer agente precisa de uma variável de ambiente nova ou de uma dependência na raiz → **para: devops**
+- Uma regra de negócio ambígua ou contraditória → **para: arquiteto** (esclarece no DOMAIN.md)
 
 ---
 
-## Fila
-
-### H-001 — Definir domínio, tenancy, operador, disponibilidade e stack
-- De: Agente Arquiteto (autoaberto ao constatar repositório vazio)
-- Data: 2026-09-24
-- Pedido: responder as 5 perguntas de negócio enviadas ao humano para que `docs/VISION.md`,
-  os ADRs 0002–0006 e a primeira spec possam ser escritos.
-- Bloqueia: **tudo** — `docs/VISION.md`, `docs/api/openapi.yaml`, `packages/shared`, `apps/*`,
-  todas as issues de área.
-- Status: **ABERTO** (aguardando resposta do humano)
-- Resolução: —
-
-### H-002 — Criar labels `area:*` no GitHub
-- De: Agente Arquiteto
-- Data: 2026-09-24
-- Pedido: `gh label create` para `area:dados`, `area:backend`, `area:frontend`, `area:devops`,
-  `area:qa` (+ `spec:*`, `blocked`, `ready`). Verificado em 24/09/2026: só existem os labels
-  default do GitHub.
-- Bloqueia: abertura das primeiras issues com classificação correta.
-- Status: **ABERTO**
-- Resolução: —
-
----
+## Abertos
+_(nenhum)_
 
 ## Resolvidos
-
-_(vazio)_
+_(nenhum)_
