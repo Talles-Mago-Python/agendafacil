@@ -21,6 +21,7 @@ _(nenhuma tarefa em andamento)_
 
 ## Concluído
 - 2026-09-24 [arquiteto] Documentação inicial: VISION, ARCHITECTURE, DOMAIN, CONVENTIONS, specs (auth, serviços, horários e bloqueios, agendamento), openapi.yaml v0.1.0, ADRs 001–005, BACKLOG
+- 2026-09-24 [dados] Documentos enviados pelo humano organizados em `docs/`. Removidas as sobras do bootstrap anterior: ADR 0001 e templates duplicados. Ainda faltam no repositório o `AGENTS.md` e o `openapi.yaml` v0.1.0. Aberto o H-001 para o devops (arena/01a0d47e-agendafacil)
 
 ## Decisões recentes
 - Veja `docs/adr/` (001 a 005)
